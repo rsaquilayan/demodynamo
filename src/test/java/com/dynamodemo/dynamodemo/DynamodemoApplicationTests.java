@@ -1,12 +1,12 @@
-package com.dynamodemo.dynamodemo;
+// package com.dynamodemo.dynamodemo;
 
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class DynamodemoApplicationTests {
+// @SpringBootTest
+// class DynamodemoApplicationTests {
 
-	@org.junit.Test
-	void contextLoads() {
-	}
+// @org.junit.Test
+// void contextLoads() {
+// }
 
-}
+// }

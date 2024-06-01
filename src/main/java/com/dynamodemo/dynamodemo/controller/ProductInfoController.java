@@ -1,5 +1,6 @@
 package com.dynamodemo.dynamodemo.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,16 @@ public class ProductInfoController {
     @GetMapping("/{id}")
     public Optional<ProductInfo> getProductById(@PathVariable String id) {
         return productInfoRepository.findById(id);
+    }
+
+    @GetMapping()
+    public Iterable<ProductInfo> getAllProducts() {
+        return productInfoRepository.findAll();
+    }
+
+    @DeleteMapping()
+    public void deleteAll() {
+        productInfoRepository.deleteAll();
     }
 
     @PostMapping
